@@ -1,16 +1,16 @@
-# Efe Pekgöz | Developer Portfolio
+# efepekgoz.dev | Developer Portfolio Website
 
-Welcome to my interactive developer portfolio — a single-page web app that showcases my background, education, experience, and selected projects across data science, AI/ML, and game development.
+Welcome to my interactive developer portfolio. A single-page web app that showcases my background, education, experience, and selected projects across data science, AI/ML, game development and others.
 
 ### About
 
 This portfolio was built to represent my professional identity as an AI MSc graduate and aspiring data analyst. It includes detailed sections on:
 
-- Personal Introduction  
-- Education (Postgrad & Undergrad)  
+- Personal Intro  
+- Education  
 - Work Experience  
-- Highlighted Projects (AI/ML, GameDev, Mobile Apps)  
-- Contact Information  
+- Highlighted Projects (AI/ML, GameDev, Other)  
+- Contact Info  
 
 ---
 
