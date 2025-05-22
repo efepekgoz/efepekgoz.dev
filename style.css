@@ -884,74 +884,73 @@ body {
   }
     
   .contact-panel {
-    background: #fff;
-    max-width: 520px;
-    margin: 70px auto 90px auto;
-    border-radius: 18px;
-    box-shadow: 0 2px 32px #0e6ba828;
-    padding: 48px 40px 36px 40px;
-    text-align: center;
+  background: #fff;
+  max-width: 520px;
+  margin: 70px auto 90px auto;
+  border-radius: 18px;
+  box-shadow: 0 2px 32px #0e6ba828;
+  padding: 48px 40px 36px 40px;
+  text-align: center;
+}
+
+.contact-panel h2 {
+  color: #2563eb;
+  font-size: 2.1rem;
+  margin-bottom: 36px;
+  font-weight: 800;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.19rem;
+  font-weight: 600;
+  color: #2563eb;
+  background: #e0f2fe1a;
+  border-radius: 12px;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: background 0.16s, color 0.17s, box-shadow 0.17s;
+  box-shadow: 0 1px 8px #2563eb12;
+  border: 1.2px solid #e0f2fe;
+  margin: 0;
+}
+.contact-link:hover,
+.contact-link:focus {
+  background: #2563eb22;
+  color: #1432a9;
+  text-decoration: underline;
+  box-shadow: 0 2px 14px #2563eb1b;
+}
+.cv-link {
+  background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
+  color: #fff;
+  border: none;
+}
+.cv-link:hover, .cv-link:focus {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  color: #fff;
+  text-decoration: underline;
+}
+.contact-icon {
+  margin-right: 14px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+  .contact-panel {
+    padding: 30px 6vw;
   }
-  
-  .contact-panel h2 {
-    color: #2563eb;
-    font-size: 2.1rem;
-    margin-bottom: 36px;
-    font-weight: 800;
-  }
-  
   .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-    align-items: center;
+    gap: 13px;
   }
-  
-  .contact-link {
-    display: inline-flex;
-    align-items: center;
-    font-size: 1.19rem;
-    font-weight: 600;
-    color: #2563eb;
-    background: #e0f2fe1a;
-    border-radius: 12px;
-    padding: 15px 30px;
-    text-decoration: none;
-    transition: background 0.16s, color 0.17s, box-shadow 0.17s;
-    box-shadow: 0 1px 8px #2563eb12;
-    border: 1.2px solid #e0f2fe;
-    margin: 0;
-  }
-  .contact-link:hover,
-  .contact-link:focus {
-    background: #2563eb22;
-    color: #1432a9;
-    text-decoration: underline;
-    box-shadow: 0 2px 14px #2563eb1b;
-  }
-  .cv-link {
-    background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
-    color: #fff;
-    border: none;
-  }
-  .cv-link:hover, .cv-link:focus {
-    background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
-    color: #fff;
-    text-decoration: underline;
-  }
-  .contact-icon {
-    margin-right: 14px;
-    vertical-align: middle;
-    flex-shrink: 0;
-  }
-  
-  @media (max-width: 650px) {
-    .contact-panel {
-      padding: 30px 6vw;
-    }
-    .contact-links {
-      gap: 13px;
-    }
-    .contact-link { padding: 11px 6vw; font-size: 1.02rem;}
-  }
-  
+  .contact-link { padding: 11px 6vw; font-size: 1.02rem;}
+}
