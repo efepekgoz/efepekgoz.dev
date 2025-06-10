@@ -7,6 +7,8 @@ const sections = [
   ];
   const menuItems = document.querySelectorAll('.menu-item');
   const indicator = document.querySelector('.sidebar .indicator');
+  const navLeftBtn = document.querySelector('.project-nav-btn.left');
+  const navRightBtn = document.querySelector('.project-nav-btn.right');
   
   function updateActiveMenu() {
     let index = sections.length;
@@ -21,6 +23,13 @@ const sections = [
   
     indicator.style.top = `${top}px`;
     indicator.style.height = `${height}px`;
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+      const show = index === 1 ? 'flex' : 'none';
+      dotsContainer.style.display = show;
+      navLeftBtn.style.display = show;
+      navRightBtn.style.display = show;
+    }
   }
   
   // On resize, recalc indicator height/pos
