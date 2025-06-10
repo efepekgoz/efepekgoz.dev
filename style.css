@@ -189,7 +189,7 @@ body {
 
 /* PERSONAL SECTION IMAGE BACKGROUND + OVERLAY */
 #personal.section {
-    background: url('images/personal.png') center center/cover no-repeat;
+    background: url('images/personal.png') 70% center/cover no-repeat;
     position: relative;
 }
 .efe-white {
@@ -976,6 +976,10 @@ body {
     justify-content: center;
     padding: 8px 0;
   }
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
   .menu-item .label {
     display: block;
     font-size: 0.7rem;
@@ -988,6 +992,11 @@ body {
   }
   .personal-top h1 { font-size: 1.3rem; }
   .personal-bottom p { font-size: 0.9rem; }
+  .project-browser-frame { min-height: 480px; }
+  .project-browser-content { padding: 10px 4vw 40px 4vw; }
+  .project-browser-slidewrap { min-height: 320px; }
+  .project-nav-btn { width: 40px; height: 40px; }
   .project-nav-btn.left { left: 8px; }
   .project-nav-btn.right { right: 8px; }
+  .project-slide-dots { bottom: 12px; }
 }
