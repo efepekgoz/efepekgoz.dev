@@ -189,7 +189,7 @@ body {
 
 /* PERSONAL SECTION IMAGE BACKGROUND + OVERLAY */
 #personal.section {
-    background: url('images/personal.png') 70% center/cover no-repeat;
+    background: url('images/personal.png') 80% center/cover no-repeat;
     position: relative;
 }
 .efe-white {
@@ -639,9 +639,9 @@ body {
   
   .project-browser-frame {
     width: 100%;
-    max-width: 1400px;
-    min-height: 700px;  /* Reduced from 860px */
-    margin: 0 auto 70px auto;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
     background: #fff;
     border-radius: 14px;
     box-shadow: 0 4px 38px #0e6ba835, 0 1.5px 0 0 #353f54;
@@ -658,7 +658,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 48px 48px 40px 48px;   /* reduced side padding for even more space */
-    min-height: 620px;
+    min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -787,7 +787,7 @@ body {
 
   /* Responsive */
   @media (max-width: 1500px) {
-    .project-browser-frame { max-width: 99vw; }
+    .project-browser-frame { max-width: 100vw; }
     .project-browser-content { padding: 34px 4vw 30px 4vw; min-height: 360px;}
     .project-browser-slide { gap: 18px;}
     .slide-info { max-width: 97vw; }
@@ -796,7 +796,7 @@ body {
   @media (max-width: 900px) {
     .project-floating-categories { gap: 10px; margin-top: 12px; margin-bottom: 14px;}
     .project-cat-btn { padding: 9px 15px; font-size: 0.97rem;}
-    .project-browser-frame { min-height: 420px;}
+    .project-browser-frame { min-height: 100vh;}
     .project-browser-content { min-height: 180px; padding: 10px 2vw 6px 2vw;}
     .project-browser-slidewrap { min-height: 180px;}
     .project-browser-slide { flex-direction: column; gap: 10px; }
@@ -979,12 +979,15 @@ body {
   .icon {
     width: 32px;
     height: 32px;
+    min-width: 32px;
+    min-height: 32px;
   }
   .menu-item .label {
-    display: block;
-    font-size: 0.7rem;
-    margin-top: 3px;
+    display: none;
   }
+  .sidebar:hover, .sidebar:focus-within { width: 100%; }
+  .sidebar:hover .label,
+  .sidebar:focus-within .label { display: none; }
   .indicator { display: none; }
   .section {
     padding-left: 0;
@@ -992,7 +995,7 @@ body {
   }
   .personal-top h1 { font-size: 1.3rem; }
   .personal-bottom p { font-size: 0.9rem; }
-  .project-browser-frame { min-height: 480px; }
+  .project-browser-frame { min-height: 100vh; }
   .project-browser-content { padding: 10px 4vw 40px 4vw; }
   .project-browser-slidewrap { min-height: 320px; }
   .project-nav-btn { width: 40px; height: 40px; }
