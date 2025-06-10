@@ -189,7 +189,7 @@ body {
 
 /* PERSONAL SECTION IMAGE BACKGROUND + OVERLAY */
 #personal.section {
-    background: url('images/personal.png') 85% center/cover no-repeat;
+    background: url('images/personal.png') center center/cover no-repeat;
     position: relative;
 }
 .efe-white {
@@ -209,11 +209,10 @@ body {
     z-index: 1;
 }
 .personal-top {
-    align-self: center;
-    text-align: center;
+    align-self: flex-start;
 }
 .personal-top h1 {
-    font-size: 5.8rem;
+    font-size: 5.6rem;
     font-weight: 700;
     color: var(--light-blue);
     margin-bottom: 0;
@@ -223,10 +222,10 @@ body {
     align-self: flex-start;
     width: 85vw;
     max-width: 720px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 .personal-bottom p {
-    font-size: 1.74rem;
+    font-size: 1.54rem;
     color: #e2f2fb;
     background: rgba(0, 28, 85, 0.57);
     padding: 18px 26px 18px 18px;
@@ -244,10 +243,10 @@ body {
         padding: 26px 0 30px 14px;
     }
     .personal-top h1 {
-        font-size: 1.64rem;
+        font-size: 1.44rem;
     }
     .personal-bottom p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 12px 14px;
     }
 }
@@ -956,6 +955,9 @@ body {
   .contact-link { padding: 11px 6vw; font-size: 1.02rem;}
 }
 @media (max-width: 480px) {
+  #personal.section { background-position: 85% center; }
+  .personal-top { align-self: center; text-align: center; }
+  .personal-bottom { margin-bottom: 8px; }
   .sidebar {
     flex-direction: row;
     top: auto;
