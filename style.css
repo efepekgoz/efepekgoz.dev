@@ -954,3 +954,40 @@ body {
   }
   .contact-link { padding: 11px 6vw; font-size: 1.02rem;}
 }
+@media (max-width: 480px) {
+  .sidebar {
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sidebar ul {
+    flex-direction: row;
+    width: 100%;
+  }
+  .menu-item {
+    border-bottom: none;
+    height: auto;
+    min-height: auto;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 0;
+  }
+  .menu-item .label {
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 3px;
+  }
+  .indicator { display: none; }
+  .section {
+    padding-left: 0;
+    padding-bottom: 80px;
+  }
+  .personal-top h1 { font-size: 1.3rem; }
+  .personal-bottom p { font-size: 0.9rem; }
+  .project-nav-btn.left { left: 8px; }
+  .project-nav-btn.right { right: 8px; }
+}
