@@ -1,8 +1,8 @@
 const sections = [
     document.getElementById('personal'),
+    document.getElementById('projects'),
     document.getElementById('education'),
     document.getElementById('work'),
-    document.getElementById('projects'),
     document.getElementById('contact')
   ];
   const menuItems = document.querySelectorAll('.menu-item');
