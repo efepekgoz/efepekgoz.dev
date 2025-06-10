@@ -1007,5 +1007,11 @@ body {
   .project-nav-btn { width: 40px; height: 40px; }
   .project-nav-btn.left { left: 8px; }
   .project-nav-btn.right { right: 8px; }
-  .project-slide-dots { bottom: 12px; }
+  .project-slide-dots {
+    position: fixed;
+    bottom: calc(60px + 6px);
+    left: 0;
+    right: 0;
+    display: none;
+  }
 }

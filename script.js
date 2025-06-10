@@ -21,6 +21,10 @@ const sections = [
   
     indicator.style.top = `${top}px`;
     indicator.style.height = `${height}px`;
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+      dotsContainer.style.display = index === 1 ? 'flex' : 'none';
+    }
   }
   
   // On resize, recalc indicator height/pos
